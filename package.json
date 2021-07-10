@@ -1,0 +1,35 @@
+{
+    "name": "@devmoath/copy-text",
+    "version": "0.0.1",
+    "description": "Copy text to user clipboard",
+    "license": "MIT",
+    "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
+    "homepage": "https://github.com/DevMoath/copy-text#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DevMoath/copy-text.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DevMoath/copy-text/issues"
+    },
+    "main": "src/index.js",
+    "scripts": {
+        "fixer": "npx prettier --write .",
+        "test": "jest --verbose --coverage --env=jsdom"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "jest": "^27.0.6",
+        "prettier": "^2.3.1"
+    },
+    "keywords": [
+        "copy",
+        "clipboard"
+    ],
+    "prettier": {
+        "printWidth": 120,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5"
+    }
+}
