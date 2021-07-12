@@ -4,7 +4,7 @@
 function copy(text) {
     /* Create textarea element and give it the text as innerText */
     const textarea = document.createElement('textarea');
-    textarea.innerText = text;
+    textarea.innerHTML = text;
 
     /* Add the element to the DOM */
     document.body.appendChild(textarea);

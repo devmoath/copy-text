@@ -1,6 +1,6 @@
 {
     "name": "@devmoath/copy-text",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Copy text to user clipboard",
     "license": "MIT",
     "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
