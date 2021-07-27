@@ -1,7 +1,14 @@
-import { copy } from '../src/index';
+import { copy } from '../src';
+
 const commonjsCopy = require('../src/index').copy;
 
-global.document.execCommand = function execCommandMock() {};
+global.document.execCommand = function execCommandMock(
+    commandId: string,
+    showUI?: boolean | undefined,
+    value?: string | undefined
+): boolean {
+    return true;
+};
 
 test('it can copy text to user clipboard', () => {
     copy(
