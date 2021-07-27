@@ -1,7 +1,4 @@
-/**
- * @param {string} text
- */
-function copy(text) {
+export function copy(text: string): void {
     /* Create textarea element and give it the text as innerText */
     const textarea = document.createElement('textarea');
     textarea.innerHTML = text;
@@ -19,5 +16,3 @@ function copy(text) {
     /* Finally, remove the textarea element from DOM */
     textarea.remove();
 }
-
-module.exports = copy;
