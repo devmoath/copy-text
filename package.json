@@ -1,6 +1,6 @@
 {
     "name": "@devmoath/copy-text",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Copy text to user clipboard",
     "license": "MIT",
     "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
@@ -15,9 +15,11 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "fixer": "npx prettier --write .",
-        "test": "jest --verbose --coverage --env=jsdom",
-        "build": "tsc"
+        "fixer": "node_modules/.bin/prettier -w .",
+        "test": "jest",
+        "build": "tsc",
+        "release:publish": "npm i && npm run build && npm publish",
+        "release:test": "npm i && npm run build && npm test"
     },
     "devDependencies": {
         "@babel/core": "^7.14.8",
@@ -38,10 +40,15 @@
         "access": "public"
     },
     "prettier": {
-        "printWidth": 120,
+        "printWidth": 142,
         "singleQuote": true,
         "tabWidth": 4,
         "trailingComma": "es5"
+    },
+    "jest": {
+        "verbose": true,
+        "collectCoverage": true,
+        "testEnvironment": "jsdom"
     },
     "babel": {
         "presets": [

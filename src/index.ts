@@ -1,4 +1,4 @@
-export function copy(text: string): void {
+function copy(text: string): boolean {
     /* Create textarea element and give it the text as innerText */
     const textarea = document.createElement('textarea');
     textarea.innerHTML = text;
@@ -11,8 +11,12 @@ export function copy(text: string): void {
     textarea.setSelectionRange(0, 99999); /* For mobile devices */
 
     /* Execute copy command to copy the selected text */
-    document.execCommand('copy');
+    const result = document.execCommand('copy');
 
     /* Finally, remove the textarea element from DOM */
     textarea.remove();
+
+    return result;
 }
+
+export default copy;

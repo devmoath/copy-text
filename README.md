@@ -18,10 +18,10 @@ yarn add @devmoath/copy-text
 
 ```javascript
 // es module import:
-import { copy } from '@devmoath/copy-text';
+import copy from '@devmoath/copy-text';
 
 // commonjs import:
-const copy = require('@devmoath/copy-text').copy;
+const copy = require('@devmoath/copy-text').default;
 
 copy('THE VALUE YOU WANT TO COPY IT');
 ```
