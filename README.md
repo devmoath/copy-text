@@ -1,4 +1,4 @@
-# @devmoath/copy-text [![Node.js Package](https://github.com/DevMoath/copy-text/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/DevMoath/copy-text/actions/workflows/npm-publish.yml)
+# @devmoath/copy-text [![Node.js Package](https://github.com/DevMoath/copy-text/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/DevMoath/copy-text/actions/workflows/npm-publish.yml) ![npm](https://img.shields.io/npm/dt/@devmoath/copy-text)
 
 Copy text to user clipboard
 
